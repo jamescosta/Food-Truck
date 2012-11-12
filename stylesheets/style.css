@@ -1,0 +1,120 @@
+@import url("normalize.css");
+@import url("form.css");
+
+/* @group Boilerplate Overrides
+----------------------------------------------- */
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+::-moz-selection{ background: #fE57A1; color:#fff; text-shadow: none; }
+::selection { background:#fE57A1; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #fE57A1; }
+
+/* @end */
+
+.container {
+	width: 950px;
+	margin: 0px auto;
+}
+
+header {
+	width: 100%;
+	background: rgb(242,245,246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+	border-bottom: 1px solid #7999a4;
+	margin-bottom: 25px;
+	height: 50px;
+}
+
+header a.logo {
+	float: left;
+	display: block;
+	margin: 15px 0 0 0;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 15px 0 0 20px;
+	font-weight: bold;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+iframe {
+	width: 950px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+form > input[type=text], form > input[type=password] {
+	width: 290px !important;
+	margin: 10px 0;
+}
+
+form > input[type=submit] {
+	width: 300px;
+	height: 30px;
+}
+
+footer > .container {
+	border-top: 1px solid #9a9a9a;
+	margin: 25px auto;
+	padding-top: 10px;
+	display: block;
+}
+
+/* @group MOBILE SHIT, SON! */
+
+@media only screen and (min-width: 100px) and (max-width: 950px) {
+
+	div.container {
+		width: 100%;
+	}
+	
+	iframe {
+		width: 100%;
+	}
+	
+	footer {
+		width: 100%;
+	}
+	
+	footer p {
+		margin: 0 20px;
+	}
+	
+	header a.logo {
+		margin-left: 20px;
+	}
+	
+	nav ul li {
+		margin: 15px 20px 0 0;
+	}
+
+}
+
+/* @end */

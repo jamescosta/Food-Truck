@@ -1,0 +1,42 @@
+/* iPad Portrait/Browser */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile/Browser */
+@media only screen and (min-width: 100px) and (max-width: 950px) {
+
+	div.container {
+		width: 100% !important;
+	}
+	
+	iframe {
+		width: 100% !important;
+	}
+	
+	footer {
+		width: 100% !important;
+	}
+	
+	header a.logo {
+		margin-left: 20px !important;
+	}
+	
+	nav ul li {
+		margin: 15px 20px 0 0 !important;
+	}
+
+}
+
+/* Mobile Landscape/Browser */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Anything smaller than standard 960 */
+@media only screen and (max-width: 959px) {}
+
+/* iPad Portrait Only */
+@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+
+/* Mobile Only */
+@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+
+/* Mobile Landscape Only */
+@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
