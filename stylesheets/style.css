@@ -12,6 +12,14 @@ a:link { -webkit-tap-highlight-color: #fE57A1; }
 
 /* @end */
 
+/* @group Alerts */
+
+.a {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.a a {color:#8a1f11;}
+.s a {color:#264409;}
+
+/* @end */
+
 .container {
 	width: 950px;
 	margin: 0px auto;
